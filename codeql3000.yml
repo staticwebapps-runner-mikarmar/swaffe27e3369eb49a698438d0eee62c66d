@@ -1,0 +1,5 @@
+# This file prevents the auto-injected CodeQL task from analyzing the 'api' folder
+# which breaks the Oryx build in DevOps pipelines.
+variables:
+  Codeql.Enabled: false
+  Codeql.ExcludePathPatterns: 'api'
